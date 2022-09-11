@@ -18,6 +18,10 @@
 
             <br><br>
 
+            <form:select path="country">
+                    <form:options items="${theCountryOptions}" />
+            </form:select>
+
             <input type="submit" value="Submit" onclick="log('test')"/>
         </form:form>
     </body>
