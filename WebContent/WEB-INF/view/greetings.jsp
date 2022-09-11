@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
     <body>
-        ${welcomeMessage}
+        Welcome, ${user.firstName} ${user.lastName}
     </body>
 </html>

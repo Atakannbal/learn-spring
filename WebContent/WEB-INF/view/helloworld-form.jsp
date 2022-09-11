@@ -1,3 +1,6 @@
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,9 +8,17 @@
         <script src="${pageContext.request.contextPath}/resources/js/test.js"></script>
     </head>
     <body>
-        <form action="processForm" method="GET">
-            <input type="text" name="userName" placeholder="What's your name?" />
-            <input type="submit" onclick="log('test')"/>
-        </form>
+        <form:form action="processForm" modelAttribute="user">
+
+            First name: <form:input path="firstName" />
+
+            <br><br>
+
+            Last name: <form:input path="lastName" />
+
+            <br><br>
+
+            <input type="submit" value="Submit" onclick="log('test')"/>
+        </form:form>
     </body>
 </html>
