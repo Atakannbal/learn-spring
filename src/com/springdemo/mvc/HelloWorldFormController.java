@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldFormController {
@@ -17,9 +18,8 @@ public class HelloWorldFormController {
 
     // process the form
     @RequestMapping("/processForm")
-    public String processForm(HttpServletRequest request, Model model) {
+    public String processForm(@RequestParam("userName") String theName, Model model) {
 
-        String theName = request.getParameter("userName");
         String welcomeMessage = "Welcome, " + theName;
         model.addAttribute("welcomeMessage", welcomeMessage);
 
