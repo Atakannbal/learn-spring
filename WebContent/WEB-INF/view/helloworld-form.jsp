@@ -22,6 +22,12 @@
                     <form:options items="${theCountryOptions}" />
             </form:select>
 
+            <br><br>
+
+            Favorite Language:
+
+            <form:checkboxes path="languages" items="${theLanguageOptions}" />
+
             <input type="submit" value="Submit" onclick="log('test')"/>
         </form:form>
     </body>

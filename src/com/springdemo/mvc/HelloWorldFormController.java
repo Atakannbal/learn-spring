@@ -15,12 +15,17 @@ public class HelloWorldFormController {
     
     @Value("#{countryOptions}")
     private Map<String, String> countryOptions;
+
+    @Value("#{languageOptions.languages}")
+    private String[] languageOptions;
     
     // show initial form
     @RequestMapping("/showForm")
     public String showForm(Model theModel) {
         theModel.addAttribute("user", new User());
         theModel.addAttribute("theCountryOptions", countryOptions);
+        theModel.addAttribute("theLanguageOptions", languageOptions);
+
         return "helloworld-form";
     }
 

@@ -4,7 +4,8 @@ public class User {
     private String firstName;
     private String lastName;
     private String country;
-    
+    private String[] languages;
+
     public User() {}
     
     public String getFirstName() {
@@ -29,5 +30,13 @@ public class User {
     
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] favoriteLanguages) {
+        this.languages = favoriteLanguages;
     }
 }
