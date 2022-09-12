@@ -36,6 +36,12 @@
 
             <br><br>
 
+
+            Coupon Code: <form:input path="couponCode" />
+            <form:errors path="couponCode" cssClass="error" />
+
+            <br><br>
+
             <form:select path="country">
                     <form:options items="${theCountryOptions}" />
             </form:select>

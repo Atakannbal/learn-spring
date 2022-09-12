@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.springdemo.mvc.validation.CouponCode;
+
 public class User {
     private String firstName;
 
@@ -20,6 +22,9 @@ public class User {
 
     @Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 chars/digits")
     private String postalCode;
+
+    @CouponCode
+    private String couponCode;
 
     private String country;
     private String[] languages;
@@ -72,5 +77,13 @@ public class User {
 
     public void setYearsOfExperience(Integer yearsOfExperience) {
         this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public String getCouponCode() {
+        return couponCode;
+    }
+
+    public void setCouponCode(String couponCode) {
+        this.couponCode = couponCode;
     }
 }

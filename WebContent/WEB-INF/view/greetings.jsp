@@ -17,5 +17,7 @@
         Years of experience: ${user.yearsOfExperience} yrs.
         <br><br>
         Postal Code: ${user.postalCode}
+        <br><br>
+        Coupon Code: ${user.couponCode}
     </body>
 </html>
