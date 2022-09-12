@@ -12,5 +12,10 @@
                 <li>${language}</li>
             </c:forEach>
         </ul>
+
+        <br><br>
+        Years of experience: ${user.yearsOfExperience} yrs.
+        <br><br>
+        Postal Code: ${user.postalCode}
     </body>
 </html>
