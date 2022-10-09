@@ -8,8 +8,13 @@
 
 	<absolute-ordering />
 
+	<welcome-file-list>
+   	 <welcome-file>index.jsp</welcome-file>
+   	 <welcome-file>index.html</welcome-file>
+ 	</welcome-file-list>
+
 	<!-- Spring MVC Dispatcher Servlet Configuration -->
-  <servlet>
+  	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
@@ -19,10 +24,10 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
-  <servlet>
-    <servlet-name>TestDbServlet</servlet-name>
-    <servlet-class>com.springdemo.mvc.TestDbServlet</servlet-class>
-  </servlet>
+	<servlet>
+		<servlet-name>TestDbServlet</servlet-name>
+		<servlet-class>com.springdemo.mvc.TestDbServlet</servlet-class>
+	</servlet>
   
 	<!-- URL mapping for Spring MVC Dispatcher Servlet -->
 	<servlet-mapping>
