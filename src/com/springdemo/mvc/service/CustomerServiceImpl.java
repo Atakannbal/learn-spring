@@ -19,9 +19,9 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     @Transactional
-    public List<Customer> getCustomers() {
+    public List<Customer> getCustomers(int theSortField) {
         // TODO Auto-generated method stub
-        return customerDAO.getCustomers();
+        return customerDAO.getCustomers(theSortField);
     }
 
     @Override

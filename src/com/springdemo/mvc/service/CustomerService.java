@@ -9,7 +9,7 @@ import com.springdemo.mvc.entity.Customer;
 @Service
 public interface CustomerService {
 
-    public List<Customer> getCustomers();
+    public List<Customer> getCustomers(int theSortField);
 
     public void saveCustomer(Customer theCustomer);
 
