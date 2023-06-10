@@ -10,8 +10,8 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import src.springdemo.mvc.SortUtils;
-import src.springdemo.mvc.entity.Customer;
+import com.springdemo.mvc.SortUtils;
+import com.springdemo.mvc.entity.Customer;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
