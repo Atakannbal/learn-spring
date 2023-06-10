@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -14,11 +15,11 @@ import com.springdemo.mvc.SortUtils;
 import com.springdemo.mvc.entity.Customer;
 
 @Repository
+@RequiredArgsConstructor
 public class CustomerDAOImpl implements CustomerDAO {
 
     // need to inject the session factory
-    @Autowired
-    private SessionFactory sessionFactory;
+    final SessionFactory sessionFactory;
     
     @Override
     public List<Customer> getCustomers(int theSortField) {
