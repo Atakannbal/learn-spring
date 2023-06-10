@@ -5,3 +5,5 @@ lib/
 .DS_Store
 .idea
 .iml
+*.class
+target
