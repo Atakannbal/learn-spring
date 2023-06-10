@@ -7,7 +7,11 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import com.springdemo.mvc.validation.CouponCode;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
 public class User {
     private String firstName;
 
@@ -28,62 +32,4 @@ public class User {
 
     private String country;
     private String[] languages;
-
-    public User() {}
-    
-    public String getFirstName() {
-        return firstName;
-    }
-    
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    
-    public String getLastName() {
-        return lastName;
-    }
-    
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-    
-    public String getCountry() {
-        return country;
-    }
-    
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String[] getLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(String[] favoriteLanguages) {
-        this.languages = favoriteLanguages;
-    }
-
-    public Integer getYearsOfExperience() {
-        return yearsOfExperience;
-    }
-
-    public String getPostalCode() {
-        return postalCode;
-    }
-
-    public void setPostalCode(String postalCode) {
-        this.postalCode = postalCode;
-    }
-
-    public void setYearsOfExperience(Integer yearsOfExperience) {
-        this.yearsOfExperience = yearsOfExperience;
-    }
-
-    public String getCouponCode() {
-        return couponCode;
-    }
-
-    public void setCouponCode(String couponCode) {
-        this.couponCode = couponCode;
-    }
 }

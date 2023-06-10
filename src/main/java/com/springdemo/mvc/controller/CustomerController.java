@@ -2,6 +2,7 @@ package com.springdemo.mvc.controller;
 
 import java.util.List;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,11 +19,11 @@ import com.springdemo.mvc.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")
+@RequiredArgsConstructor
 public class CustomerController {
     
     // inject the customer dao
-    @Autowired
-    private CustomerService customerService;
+    final CustomerService customerService;
 
     @GetMapping("/list")
     public String listCustomers(@RequestParam(required=false) String sort, Model theModel) {

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +12,11 @@ import com.springdemo.mvc.dao.CustomerDAO;
 import com.springdemo.mvc.entity.Customer;
 
 @Service
+@RequiredArgsConstructor
 public class CustomerServiceImpl implements CustomerService {
 
     // need to inject customer dao
-    @Autowired
-    private CustomerDAO customerDAO;
+    final CustomerDAO customerDAO;
 
     @Override
     @Transactional
