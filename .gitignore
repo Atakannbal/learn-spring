@@ -3,3 +3,4 @@ lib/
 *.war
 *.class
 .DS_Store
+.idea
