@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import src.springdemo.mvc.validation.CouponCode;
+import com.springdemo.mvc.validation.CouponCode;
 
 public class User {
     private String firstName;
