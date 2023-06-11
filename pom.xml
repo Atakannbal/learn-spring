@@ -88,6 +88,7 @@
       <artifactId>spring-tx</artifactId>
       <version>5.3.14</version>
     </dependency>
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
@@ -131,6 +132,12 @@
         <source>11</source>
         <target>11</target>
       </configuration>
+    </plugin>
+    <plugin>
+      <!-- Add Maven coordinates (GAV) for: maven-war-plugin -->
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.2.0</version>
     </plugin>
   </plugins>
   </build>
