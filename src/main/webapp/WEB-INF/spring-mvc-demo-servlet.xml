@@ -57,20 +57,7 @@
         <property name="minPoolSize" value="5" />
         <property name="maxPoolSize" value="20" />
         <property name="maxIdleTime" value="30000" />
-	</bean>  
-	
-    <!-- Setup Hibernate session factory -->
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-		<property name="dataSource" ref="myDataSource" />
-		<property name="packagesToScan" value="com.springdemo.mvc.entity" />
-		<property name="hibernateProperties">
-		   <props>
-		      <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-		      <prop key="hibernate.show_sql">true</prop>
-		   </props>
-		</property>
-   </bean>	  
+	</bean>
 
     <!-- Setup Hibernate transaction manager -->
 	<bean id="myTransactionManager"
