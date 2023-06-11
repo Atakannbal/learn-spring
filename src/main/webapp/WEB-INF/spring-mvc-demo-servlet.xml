@@ -43,12 +43,6 @@
 		  class="org.springframework.context.support.ResourceBundleMessageSource">
 		  <property name="basenames" value="resources/messages" />
 	</bean>
-
-    <!-- Setup Hibernate transaction manager -->
-	<bean id="myTransactionManager"
-            class="org.springframework.orm.hibernate5.HibernateTransactionManager">
-        <property name="sessionFactory" ref="sessionFactory"/>
-    </bean>
     
     <!-- Enable configuration of transactional behavior based on annotations -->
 	<tx:annotation-driven transaction-manager="myTransactionManager" />
